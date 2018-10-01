@@ -1,5 +1,5 @@
 package interfaceLibrary;
-
+/** library book class */
 abstract class LibraryBook extends Book implements Comparable<LibraryBook> {
 	/** call number for the LibraryBook */
 	protected String callNumber;
@@ -36,7 +36,7 @@ abstract class LibraryBook extends Book implements Comparable<LibraryBook> {
 	abstract void returned();
 	abstract String circulationStatus();
 
-	/** 
+	/**
 	 * implementation of Comparable's compareTo method
 	 * @param lib:  Library object being compared
 	 * @return 0 if call numbers of this and lib match
@@ -46,12 +46,11 @@ abstract class LibraryBook extends Book implements Comparable<LibraryBook> {
 	public int compareTo (LibraryBook lib) {
 		return (callNumber.compareTo(lib.callNumber));
 	}
-	
+
 	/**
 	 * @return title, author, ISBN, call number as a String for printing
 	 */
 	public String toString () {
 		return (super.toString() + "\n Library call number: " + callNumber);
 	}
-
 }
