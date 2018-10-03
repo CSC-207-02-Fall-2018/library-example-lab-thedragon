@@ -90,6 +90,7 @@ public class Library {
 		//attempt to access an empty Library: 
 		lib.checkout("Donald Duck", "March 1, 2012", "QA43.W34");
 		lib.returned("QA76.6.W3275");
+		lib.printLibrary(); 
 		
 		// set up library
 		lib.addBook(new ReferenceBook ("Henry M. Walker", 
