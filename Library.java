@@ -87,6 +87,10 @@ public class Library {
 
 		Library lib = new Library ();
 		
+		//attempt to access an empty Library: 
+		lib.checkout("Donald Duck", "March 1, 2012", "QA43.W34");
+		lib.returned("QA76.6.W3275");
+		
 		// set up library
 		lib.addBook(new ReferenceBook ("Henry M. Walker", 
 					"Problems for Computer Solution using BASIC",
